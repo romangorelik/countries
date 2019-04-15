@@ -6,5 +6,50 @@
 
 .backgroundImage {
 	min-width: 100vw;
-	/* filter: grayscale(75%); */
 }
+
+.homeButton {
+  position: absolute;
+  top: 40%;
+  left: 47%;
+  height: 40px;
+  width: 80px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.paperPlane {
+  height: 50px;
+  position: absolute;
+  top: -13%;
+  left: 18%;
+  outline: none;
+}
+
+.homeButton:focus .paperPlane {
+  animation: planeFly 4s 1;
+  animation-fill-mode: forwards;
+  outline: none;
+}
+
+.homeButton:focus {
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+
+@keyframes planeFly {
+  0% {
+    transform: translatex(0px) translatey(0px);
+  }
+  30% {
+    transform: translatex(200px) translatey(0px);
+  }
+  100% {
+      transform: translatex(1000px) translatey(-500px);
+  }
+  }
+
+
