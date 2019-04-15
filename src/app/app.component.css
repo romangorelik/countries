@@ -1,0 +1,10 @@
+.backgroundImageContainer {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundImage {
+	min-width: 100vw;
+	/* filter: grayscale(75%); */
+}
