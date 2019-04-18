@@ -24,10 +24,29 @@
       </div>
     </div>
 
+    <div class='budget'>
+        <span class='question'>What's your budget?</span>
+        <div class="budgetButtons">
+          <button (click)='setBudget(true, false, false)' [ngStyle]="budgetStates[0] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}" >Cheap</button>
+          <button (click)='setBudget(false, true, false)' [ngStyle]="budgetStates[1] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Modest</button>
+          <button (click)='setBudget(false, false, true)' [ngStyle]="budgetStates[2] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Expensive</button>
+        </div>
+      </div>
+
   </div>
 
 
   <div class='rightModalContainer'>
+
+    <div class='season'>
+      <span class='question'>What's your favorite season?</span>
+      <div class="seasonButtons">
+        <button (click)='setSeason(true, false, false, false)' [ngStyle]="seasonStates[0] ? {'background-color': '#99e699', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Spring</button>
+        <button (click)='setSeason(false, true, false, false)' [ngStyle]="seasonStates[1] ? {'background-color': '#ffcc66', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Summer</button>
+        <button (click)='setSeason(false, false, true, false)' [ngStyle]="seasonStates[2] ? {'background-color': '#b30000', 'color': 'white'} : {'background-color': '#383838', 'color': 'white'}">Autumn</button>
+        <button (click)='setSeason(false, false, false, true)' [ngStyle]="seasonStates[3] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Winter</button>
+      </div>
+    </div>
 
   </div>
 

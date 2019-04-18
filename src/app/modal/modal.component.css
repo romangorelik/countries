@@ -13,7 +13,6 @@
 /**************** Left Modal Container ****************/
 
 .leftModalContainer {
-  border: 1px solid black;
   width: 42%;
   height: 95%;
   display: flex;
@@ -128,11 +127,63 @@
   border-right: none; /* Prevent double borders */
 }
 
+.budget {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.budgetButtons button {
+  background-color: #383838; /* Green background */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  outline: none;
+}
+
+.budgetButtons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.budgetButtons button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
 
 /**************** Right Modal Container ****************/
 
 .rightModalContainer {
-  border: 1px solid black;
   width: 42%;
   height: 95%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.season {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.seasonButtons button {
+  background-color: #383838; /* Green background */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  outline: none;
+}
+
+.seasonButtons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.seasonButtons button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
 }

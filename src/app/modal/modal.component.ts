@@ -12,6 +12,8 @@ export class ModalComponent implements OnInit {
   friends: boolean = false;
   partyText:string = '';
   buttonStates:any[] = [false, false, false];
+  budgetStates:any[] = [false, false, false];
+  seasonStates:any[] = [false, false, false, false];
 
   constructor() { }
 
@@ -22,6 +24,19 @@ export class ModalComponent implements OnInit {
     this.buttonStates[0] = one;
     this.buttonStates[1] = two;
     this.buttonStates[2] = three;
+  }
+
+  setBudget(one,two,three) {
+    this.budgetStates[0] = one;
+    this.budgetStates[1] = two;
+    this.budgetStates[2] = three;
+  }
+
+  setSeason(one,two,three, four) {
+    this.seasonStates[0] = one;
+    this.seasonStates[1] = two;
+    this.seasonStates[2] = three;
+    this.seasonStates[3] = four;
   }
 
   setParty(alone, wife, family, friends) {
