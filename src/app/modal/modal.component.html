@@ -48,6 +48,24 @@
       </div>
     </div>
 
+    <div class='location'>
+      <span class='question'>What type of landscape?</span>
+      <div class="locationButtons">
+        <button (click)='setLocation(true, false, false, false)' [ngStyle]="locationStates[0] ? {'background-color': '#c2a780', 'color': 'brown'} : {'background-color': '#383838', 'color': 'white'}">Beach</button>
+        <button (click)='setLocation(false, true, false, false)' [ngStyle]="locationStates[1] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Mountains</button>
+        <button (click)='setLocation(false, false, true, false)' [ngStyle]="locationStates[2] ? {'background-color': '#0080ff', 'color': 'white'} : {'background-color': '#383838', 'color': 'white'}">City</button>
+        <button (click)='setLocation(false, false, false, true)' [ngStyle]="locationStates[3] ? {'background-color': '#00b300', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Countryside</button>
+      </div>
+    </div>
+
+    <div class='tourist'>
+      <span class='question'>Tourist or Local?</span>
+      <div class="touristButtons">
+        <button (click)='setTourist(true, false, false, false)' [ngStyle]="touristStates[0] ? {'background-color': '#99e699', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Tourist</button>
+        <button (click)='setTourist(false, true, false, false)' [ngStyle]="touristStates[1] ? {'background-color': '#ffcc66', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">Local</button>
+      </div>
+    </div>
+
   </div>
 
 </div>

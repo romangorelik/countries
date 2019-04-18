@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
   alone:boolean = false;
-  wife: boolean = false;
-  family: boolean = false;
-  friends: boolean = false;
+  wife:boolean = false;
+  family:boolean = false;
+  friends:boolean = false;
   partyText:string = '';
   buttonStates:any[] = [false, false, false];
   budgetStates:any[] = [false, false, false];
   seasonStates:any[] = [false, false, false, false];
+  locationStates:any[] = [false, false, false, false];
+  touristStates:any[] = [false, false];
 
   constructor() { }
 
@@ -37,6 +39,18 @@ export class ModalComponent implements OnInit {
     this.seasonStates[1] = two;
     this.seasonStates[2] = three;
     this.seasonStates[3] = four;
+  }
+
+  setLocation(one,two,three, four) {
+    this.locationStates[0] = one;
+    this.locationStates[1] = two;
+    this.locationStates[2] = three;
+    this.locationStates[3] = four;
+  }
+
+  setTourist(one, two) {
+    this.touristStates[0] = one;
+    this.touristStates[1] = two;
   }
 
   setParty(alone, wife, family, friends) {

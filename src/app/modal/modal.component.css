@@ -187,3 +187,53 @@
 .seasonButtons button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
+
+.location {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.locationButtons button {
+  background-color: #383838; /* Green background */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  outline: none;
+}
+
+.locationButtons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.locationButtons button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.tourist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.touristButtons button {
+  background-color: #383838; /* Green background */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  outline: none;
+}
+
+.touristButtons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.touristButtons button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
