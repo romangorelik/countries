@@ -4,6 +4,7 @@
   overflow: hidden;
   flex-flow: row nowrap;
   justify-content: center;
+  align-items: center;
 }
 
 .backgroundImage {
@@ -79,4 +80,13 @@
   color: white;
   font-family: 'Cabin Condensed', sans-serif;
   text-shadow: 2px 2px black;
+}
+
+.modal {
+  position: absolute;
+  width: 70%;
+  height: 500px;
+  background-color: white;
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+  z-index: 2;
 }

@@ -9,6 +9,7 @@ import { images } from './helpers/backgroundImages.js';
 })
 export class AppComponent implements OnInit {
   image: string = images[0];
+  showModal: boolean = false;
 
   constructor () {
     this.image = images[Math.floor(Math.random() * images.length)]
@@ -16,6 +17,12 @@ export class AppComponent implements OnInit {
 
   ngOnInit () {
     
+  }
+
+  popUpModal = () => {
+    setTimeout((() => {
+      this.showModal = true;
+    }), 2000)
   }
   
 }
