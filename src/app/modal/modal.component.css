@@ -22,9 +22,22 @@
   align-items: center;
 }
 
-.whoComing {
-  width: 100%;
+.partyType {
   text-align: center;
+}
+
+.partyTypeText {
+  font-size: 20px;
+  font-family: 'Cabin Condensed', sans-serif;
+}
+
+.question {
+  width: 100%;
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .alone {
@@ -33,6 +46,7 @@
   padding-right: 5px;
   width: 75px;
   height: 75px;
+  cursor: pointer;
 } 
 
 .alone:hover {
@@ -49,6 +63,7 @@
   padding-right: 5px;
   width: 75px;
   height: 75px;
+  cursor: pointer;
 }
 
 .wife:hover {
@@ -65,6 +80,7 @@
   padding-right: 5px;
   width: 75px;
   height: 75px;
+  cursor: pointer;
 }
 
 .family:hover {
@@ -78,6 +94,7 @@
 .friends {
   width: 75px;
   height: 75px;
+  cursor: pointer;
 }
 
 .friends:hover {
@@ -85,7 +102,31 @@
   height: 85px;
 }
 
+.amountOfTime {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 
+}
+
+.amountOfTimeButtons button {
+  background-color: #383838; /* Green background */
+  color: white; /* White text */
+  padding: 10px 30px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  float: left; /* Float the buttons side by side */
+  outline: none;
+}
+
+.amountOfTimeButtons:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.amountOfTimeButtons button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
 
 
 /**************** Right Modal Container ****************/

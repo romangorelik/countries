@@ -1,13 +1,29 @@
 <div class='modalContainer'>
 
   <div class='leftModalContainer'>
-    <span class='whoComing'>Who's Coming?</span>
+
     <div class='partyType'>
-      <img class='alone' (click)="setAlone(true, false, false, false)" src='{{alone ? "https://i.imgur.com/Ko0Y0ph.png": "https://www.freeiconspng.com/uploads/person-icon-user-person-man-icon-4.png"}}'/>
-      <img class='wife' (click)="setAlone(false, true, false, false)" src='{{wife ? "https://i.imgur.com/pP0PSSO.png": "https://png2.kisspng.com/sh/a4798ecea6a19ae54c49a8977b88b775/L0KzQYm3VME5N5p1j5H0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgdwdZJzRdhubXHvdX7qjPlxNZJ3jJ9rdYPsfrb6kB1idl46edYCOEPkR4qCgcg6Ol86TaYBNEm8RIK8UsQxP2Q4UKUBMkm3PsH1h5==/kisspng-computer-icons-woman-female-clip-art-businessman-5ad783a799a892.5546499415240733836294.png"}}'/>
-      <img class='family' (click)="setAlone(false, false, true, false)" src='{{family ? "https://i.imgur.com/AHRQP4q.png": "https://images.vexels.com/media/users/3/146303/isolated/preview/956d1363ad0f8b4c6422ca0d68fcd0ce-family-with-two-children-icon-by-vexels.png"}}'/>
-      <img class='friends' (click)="setAlone(false, false, false, true)" src='{{friends ? "https://i.imgur.com/F3mtEde.png": "https://image.flaticon.com/icons/png/512/33/33715.png"}}'/>
+      <span class='question'>Who's Coming?</span>
+      <div class='partyType'>
+        <img class='alone' (click)="setParty(true, false, false, false)" src='{{alone ? "https://i.imgur.com/Ko0Y0ph.png": "https://www.freeiconspng.com/uploads/person-icon-user-person-man-icon-4.png"}}'/>
+        <img class='wife' (click)="setParty(false, true, false, false)" src='{{wife ? "https://i.imgur.com/pP0PSSO.png": "https://png2.kisspng.com/sh/a4798ecea6a19ae54c49a8977b88b775/L0KzQYm3VME5N5p1j5H0aYP2gLBuTfNwdaF6jNd7LXnmf7B6TgdwdZJzRdhubXHvdX7qjPlxNZJ3jJ9rdYPsfrb6kB1idl46edYCOEPkR4qCgcg6Ol86TaYBNEm8RIK8UsQxP2Q4UKUBMkm3PsH1h5==/kisspng-computer-icons-woman-female-clip-art-businessman-5ad783a799a892.5546499415240733836294.png"}}'/>
+        <img class='family' (click)="setParty(false, false, true, false)" src='{{family ? "https://i.imgur.com/AHRQP4q.png": "https://images.vexels.com/media/users/3/146303/isolated/preview/956d1363ad0f8b4c6422ca0d68fcd0ce-family-with-two-children-icon-by-vexels.png"}}'/>
+        <img class='friends' (click)="setParty(false, false, false, true)" src='{{friends ? "https://i.imgur.com/F3mtEde.png": "https://image.flaticon.com/icons/png/512/33/33715.png"}}'/>
+      </div>
+      <div class='partyTypeText'>
+        <span>{{partyText}}</span>
+      </div>
     </div>
+
+    <div class='amountOfTime'>
+      <span class='question'>How long will you stay?</span>
+      <div class="amountOfTimeButtons">
+        <button (click)='setAmountOfTime(true, false, false)' [ngStyle]="buttonStates[0] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}" >1 Week</button>
+        <button (click)='setAmountOfTime(false, true, false)' [ngStyle]="buttonStates[1] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">2 - 4 Weeks</button>
+        <button (click)='setAmountOfTime(false, false, true)' [ngStyle]="buttonStates[2] ? {'background-color': '#e6ffe6', 'color': 'black'} : {'background-color': '#383838', 'color': 'white'}">1 -2 Months</button>
+      </div>
+    </div>
+
   </div>
 
 
